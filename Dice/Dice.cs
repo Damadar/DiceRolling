@@ -27,23 +27,13 @@ namespace Dice
         }
 
         /// <summary>
-        /// This allows you to roll 1 die with a certain number of sides.
-        /// </summary>
-        /// <param name="intSides">The number of sides the die should have.</param>
-        /// <returns>Returns a random roll of the die.</returns>
-        public int Roll(int intSides)
-        {
-            return rand.Next(IntMinimumSides, intSides + IntMaxSideAddition);
-        }
-
-        /// <summary>
         /// This allows you to roll multiple dice of the same type.
         /// </summary>
         /// <param name="intSides">The number of sides the die should have.</param>
         /// <param name="intDice">The number of dice you are going to roll.</param>
         /// <param name="intModifier">A modifier that can be added to the die rolls.</param>
         /// <returns>An integer with the combined die rolls.</returns>
-        public int Roll(int intSides, int intDice, int intModifier = 0)
+        public int Roll(int intSides, int intDice = 1, int intModifier = 0)
         {
             int intRoll = intModifier;
 
