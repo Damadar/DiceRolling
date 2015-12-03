@@ -7,20 +7,39 @@ namespace Dice
 {
     public class Dice
     {
+        /// <summary>
+        /// Implementation of the Random class.
+        /// </summary>
         Random rand = new Random();
-
+        /// <summary>
+        /// The minimum number of sides a die can have.
+        /// </summary>
         private int IntMinimumSides = 1;
-
+        /// <summary>
+        /// Add 1 to everyone roll to ensure we get a full value.
+        /// </summary>
         private int IntMaxSideAddition = 1;
-
+        /// <summary>
+        /// The number of spaces in the multidimensional array for returns.
+        /// </summary>
         private int intMultipleDiceValues = 3;
-
+        /// <summary>
+        /// Total number of sides on the dice.
+        /// </summary>
         private int intTotalSides = 0;
-
+        /// <summary>
+        /// Number of dice rolled.
+        /// </summary>
         private int intAmountOfDice = 1;
-
+        /// <summary>
+        /// Die result in the array.
+        /// </summary>
         private int intResult = 2;
 
+        /// <summary>
+        /// A class used for rolling dice. Could be useful for any random number generation. 
+        /// Implements the Random class from C#, so it is not useful for anything cryptographic in nature.
+        /// </summary>
         public Dice()
         {
 
